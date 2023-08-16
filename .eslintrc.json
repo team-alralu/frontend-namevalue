@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals", "prettier", "airbnb", "airbnb-typescript"],
+  "plugins": ["jsx-a11y"],
+  "rules": {
+    "jsx-a11y/label-has-associated-control": [
+      //htmlfor 프로퍼티 예외
+      2,
+      {
+        "labelAttributes": ["htmlFor"]
+      }
+    ],
+    "@typescript-eslint/naming-convention": "off",
+    "react/no-unknown-property": ["error", { "ignore": ["css"] }], //emotion을 위한 'css' prop은 제외
+    "object-curly-newline": "off", //import 개행 규칙 제거
+    "react/jsx-one-expression-per-line": "off",
+    "react/function-component-definition": [2, { "namedComponents": ["arrow-function"] }], //컴포넌트 기명함수-화살표함수
+    "react/no-children-prop": "off",
+    "react/react-in-jsx-scope": "off", //react import 생략
+    "import/prefer-default-export": "off", //
+    "react/jsx-props-no-spreading": "off", //구조분해 할당 반드시 사용
+    "@typescript-eslint/comma-dangle": "off", //마지막 comma 생략 허용
+    "react/jsx-curly-newline": ["error", { "multiline": "consistent" }], //줄바꿈 허용
+    "brace-style": "off"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2020, //ecmascript사용 버전
+    "sourceType": "module", //모듈 시스템 (import-export)
+    "ecmaFeatures": {
+      "jsx": true //jsx 사용
+    }
+  }
+}
