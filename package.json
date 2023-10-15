@@ -9,6 +9,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "19.4.0",
+    "pnpm": "7.25.1"
+  },
   "dependencies": {
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
