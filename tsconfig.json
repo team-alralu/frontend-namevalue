@@ -9,7 +9,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -23,8 +23,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@layouts/*": ["./src/layouts/*"],
-      "@shared/*": ["./src/shared/*"]
+      "@layouts/*": ["src/layouts/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@libraries/*": ["./src/libraries/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
