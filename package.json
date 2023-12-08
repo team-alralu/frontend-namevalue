@@ -1,6 +1,7 @@
 {
   "name": "name-value",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "heroku-postbuild": "pnpm run build",
