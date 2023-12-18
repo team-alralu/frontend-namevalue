@@ -14,5 +14,7 @@ export const Colors: Record<ColorScheme, string> = Object.freeze({
   font: '#404756',
   disabled: '#BDC3C7',
   black: '#000000',
-  white: '#FFFFFF'
+  white: '#FFFFFF',
+  green: '#2DB502',
+  blue: '#4385F4'
 });

@@ -1,11 +1,11 @@
 import { Theme } from '@emotion/react';
 import { Colors } from '@layouts/colors';
-import type { ColorToken } from '@layouts/types';
+import type { ColorScheme } from '@layouts/types';
 
 type ColorValue = (typeof Colors)[keyof typeof Colors];
 
 export interface ThemeType {
-  colors: Record<ColorToken, ColorValue>;
+  colors: Record<ColorScheme, ColorValue>;
 }
 
 const theme: Theme = Object.freeze({

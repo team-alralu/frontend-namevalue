@@ -1,4 +1,4 @@
-type Colors = 'white' | 'black';
+type Colors = 'white' | 'black' | 'green' | 'blue';
 type BaseColors = 'primary' | 'secondary' | 'accent';
 type StatusColors = 'success' | 'warning' | 'error' | 'info';
 type ContentColors = 'neutral' | 'border' | 'font' | 'disabled';
