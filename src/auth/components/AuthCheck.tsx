@@ -10,7 +10,7 @@ export const AuthCheck = ({ accessToken }: { accessToken: string }) => {
     signIn(
       'credentials',
       {
-        callbackUrl: '/registration/mbti'
+        callbackUrl: '/registration'
       },
       { accessToken: accessToken }
     );
