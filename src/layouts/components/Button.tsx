@@ -2,7 +2,7 @@
 
 import { useTheme } from '@emotion/react';
 import { Text } from './Text';
-import { getColorFromColorScheme, getInvertColor } from '../utils/color';
+import { getColorFromColorScheme } from '../utils/color';
 import { createBaseStyle, createVariantStyle } from '../styles/buttonStyle';
 import { Size, ColorScheme, ButtonVariant } from '../types';
 
