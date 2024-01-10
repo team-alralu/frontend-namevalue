@@ -26,4 +26,8 @@ export interface SkeletonProps {
   colorScheme?: ColorScheme;
 }
 
+/** Flex */
 export type FlexToken = 'start' | 'end' | 'center' | 'between' | 'around' | 'stretch';
+
+/** Form */
+export type FormVariants = 'flushed' | 'outlined';
