@@ -10,7 +10,7 @@ export const AuthCheck = ({ accessToken }: { accessToken: string }) => {
   }
   return (
     <Center>
-      <Loading style={{ background: '#ffffff' }} />
+      <Loading style={{ backgroundColor: 'transparent' }} />
       <Text>로그인중이에요, 잠시만 기다려주세요.</Text>
     </Center>
   );
