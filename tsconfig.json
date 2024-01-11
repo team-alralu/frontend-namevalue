@@ -28,7 +28,7 @@
       "@libraries/*": ["./src/libraries/*"],
       "@auth/*": ["src/auth/*"],
       "@registration/*": ["src/registration/*"],
-      "@test/*": ["src/test/*"]
+      "@mocks/*": ["src/mocks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "build/types/**/*.ts"],
