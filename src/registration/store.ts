@@ -3,7 +3,7 @@ import type { RegistrationStep, RegistrationFormData } from './types';
 
 export type RegistrationAction =
   | { type: 'SET_STEP'; payload: RegistrationStep }
-  | { type: 'SET_MBTI'; payload: Mbti }
+  | { type: 'SET_MBTI'; payload: Mbti | null }
   | { type: 'SET_NAME'; payload: string }
   | { type: 'SET_CHARACTERS'; payload: number[] }
   | { type: 'SET_LIKEABILITY'; payload: number }
