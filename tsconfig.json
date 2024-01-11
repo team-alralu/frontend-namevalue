@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -26,34 +22,15 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@shared/*": [
-        "./src/shared/*"
-      ],
-      "@libraries/*": [
-        "./src/libraries/*"
-      ],
-      "@auth/*": [
-        "src/auth/*"
-      ],
-      "@registration/*": [
-        "src/registration/*"
-      ]
+      "@/*": ["./src/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@libraries/*": ["./src/libraries/*"],
+      "@auth/*": ["src/auth/*"],
+      "@registration/*": ["src/registration/*"],
+      "@test/*": ["src/test/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "build/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "build/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
