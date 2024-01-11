@@ -3,7 +3,7 @@ import type { ColorScheme } from './types';
 export const Colors: Record<ColorScheme, string> = Object.freeze({
   primary: '#0B78EB',
   secondary: '#E0F1FF',
-  tertiary: '#C0A7DB',
+  tertiary: '#FCEAFF',
   accent: '#EC5BBC',
   success: '#26DE81',
   warning: '#E67E00',
