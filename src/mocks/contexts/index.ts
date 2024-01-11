@@ -1,2 +1,3 @@
-export * from './EmotionProvider';
-export * from './NextAppRouterProvider';
+export * from './EmotionProviderMock';
+export * from './NextAppRouterProviderMock';
+export * from './RegistrationFunnelProviderMock';
