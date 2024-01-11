@@ -2,14 +2,11 @@
 
 import Image from 'next/image';
 import { Button, Stack, Text } from '@layouts/components';
-import { NAVER_LOGIN_URL, GOOGLE_LOGIN_URL } from '../contants';
+import { NAVER_LOGIN_URL, GOOGLE_LOGIN_URL } from '../constants';
 import Link from 'next/link';
-import { useSession } from 'next-auth/react';
 import Logo from '../../../public/logo.png';
 
 export const Login = () => {
-  const { data } = useSession();
-  console.log(data);
   return (
     <Stack justify="center" align="center" style={{ height: '100vh', position: 'relative' }}>
       <Image

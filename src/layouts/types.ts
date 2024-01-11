@@ -1,5 +1,5 @@
 type Colors = 'white' | 'black' | 'green' | 'blue';
-type BaseColors = 'primary' | 'secondary' | 'accent';
+type BaseColors = 'primary' | 'secondary' | 'tertiary' | 'accent';
 type StatusColors = 'success' | 'warning' | 'error' | 'info';
 type ContentColors = 'neutral' | 'border' | 'font' | 'disabled';
 
@@ -26,4 +26,8 @@ export interface SkeletonProps {
   colorScheme?: ColorScheme;
 }
 
+/** Flex */
 export type FlexToken = 'start' | 'end' | 'center' | 'between' | 'around' | 'stretch';
+
+/** Form */
+export type FormVariants = 'flushed' | 'outlined';

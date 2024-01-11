@@ -35,7 +35,7 @@ const smallFontStyle = css`
   letter-spacing: -0.005em;
 `;
 
-const createFontSizeStyle = (size: Size) => {
+export const createFontSizeStyle = (size: Size) => {
   switch (size) {
     case '2xl':
       return css(xxlFontStyle);

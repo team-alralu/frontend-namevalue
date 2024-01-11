@@ -1,19 +1,17 @@
 'use client';
-import { useClientMounted } from '@shared/hooks/useClientMounted';
-import { useSession } from 'next-auth/react';
-import { signIn } from 'next-auth/react';
+import { useLogin } from '../hooks/useLogin';
+import { Center } from '@layouts/mixins/Center';
+import { Loading, Text } from '@layouts/components';
 
 export const AuthCheck = ({ accessToken }: { accessToken: string }) => {
-  const { isMounted } = useClientMounted();
-  const session = useSession();
-  if (!session.data && isMounted) {
-    signIn(
-      'credentials',
-      {
-        callbackUrl: '/registration/mbti'
-      },
-      { accessToken: accessToken }
-    );
+  const logged = useLogin(accessToken);
+  if (logged) {
+    return null;
   }
-  return null;
+  return (
+    <Center>
+      <Loading style={{ backgroundColor: 'transparent' }} />
+      <Text>로그인중이에요, 잠시만 기다려주세요.</Text>
+    </Center>
+  );
 };
